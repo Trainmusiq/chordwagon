@@ -45,6 +45,7 @@ app aún no empezó — no hay `engine/` ni `index.html` todavía.
     ChordNet, que envuelve el state dict en un diccionario con métricas de entrenamiento),
     inspeccionar antes de asumir su forma.
 11. **Commits por hito**, mensajes descriptivos, push al cierre de cada hito.
+12. **Idioma — español neutro (registrada 15 jul 2026)**: todo texto producido — copy de producto (UI, correos, páginas) Y reportes/comunicaciones de sesión — se escribe en español neutro: tuteo estándar (quieres, suelta, haz clic, puedes), nunca voseo (querés, soltá, hacé, podés) ni regionalismos de ningún país (ver `brief-diseno.md` de `trainmusiq/trainmusiq`).
 
 ## Al cerrar cada sesión
 Reportar: checklist de lo pedido con ✓/✗/⚠ (los ⚠ honestos valen más que ✓ de cortesía),
