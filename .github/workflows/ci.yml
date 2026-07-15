@@ -1,0 +1,23 @@
+name: CI
+
+# Placeholder de esta sesión de apertura (sin producto aún): valida que el
+# scaffold del repo esté completo. Cuando exista código en engine/, reemplazar
+# por la batería de tests real (mismo patrón que centrail/.github/workflows/test.yml).
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  scaffold-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verificar archivos base del repo
+        run: |
+          test -f LICENSE
+          test -f docs/especificacion.md
+          test -f CLAUDE.md
+          echo "Scaffold OK"

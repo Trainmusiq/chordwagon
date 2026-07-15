@@ -1,0 +1,105 @@
+name: Reporte de error / Bug report
+description: Algo no funcionó como esperabas en chordwagon / Something didn't work as expected in chordwagon.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar. chordwagon procesa el audio en tu navegador — **nunca subas tu archivo de audio** a este Issue (privacidad primero, y probablemente no lo necesitamos: los datos de abajo casi siempre bastan para reproducir el problema).
+
+        Thanks for reporting. Centrail processes everything in your browser — **never attach your audio file** to this Issue (privacy first, and we usually don't need it: the info below is almost always enough to reproduce the issue).
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Qué pasó / What happened
+      description: Descripción del problema. Si viste un mensaje de error, pega el texto completo (o el bloque de diagnóstico copiable que muestra la app, si apareció uno). / Describe the problem. If you saw an error message, paste the full text (or the app's copyable diagnostic block, if one appeared).
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir / Steps to reproduce
+      placeholder: |
+        1. Cargué un archivo .flac de ~5 minutos
+        2. Elegí destino 432 Hz
+        3. Al hacer clic en "Corregir y descargar"...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Qué esperabas que pasara / What you expected to happen
+    validations:
+      required: false
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Navegador / Browser
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Otro (especificar abajo) / Other (specify below)
+    validations:
+      required: true
+
+  - type: input
+    id: browser-version
+    attributes:
+      label: Versión del navegador (y nombre si elegiste "Otro") / Browser version (and name if you chose "Other")
+      placeholder: "ej. Chrome 127 / Brave 1.68"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema operativo / Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS
+        - Otro / Other
+    validations:
+      required: true
+
+  - type: input
+    id: file-format
+    attributes:
+      label: Formato del archivo / File format
+      placeholder: "ej. FLAC 24-bit/96kHz, WAV 16-bit/44.1kHz, MP3..."
+    validations:
+      required: false
+
+  - type: input
+    id: file-duration
+    attributes:
+      label: Duración aproximada del archivo / Approximate file duration
+      placeholder: "ej. 4 minutos / 4 minutes"
+    validations:
+      required: false
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Consola del navegador (F12 → Console) / Browser console (F12 → Console)
+      description: Copia cualquier error en rojo que veas ahí. / Copy any red errors you see there.
+      render: shell
+    validations:
+      required: false
+
+  - type: input
+    id: url
+    attributes:
+      label: URL donde ocurrió / URL where it happened
+      placeholder: "https://trainmusiq.github.io/chordwagon/"
+    validations:
+      required: false

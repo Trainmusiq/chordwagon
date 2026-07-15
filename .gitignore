@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+*.log
+
+# audio y checkpoints de investigación — no commitear binarios pesados de terceros
+research/**/models/
+research/**/venv/
+research/**/*.onnx
+research/**/*.sdict
+research/**/*.pt
+
+# audio con copyright (mismo patrón que centrail) — nunca commitear
+test/private/
