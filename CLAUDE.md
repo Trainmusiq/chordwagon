@@ -46,6 +46,7 @@ app aún no empezó — no hay `engine/` ni `index.html` todavía.
     inspeccionar antes de asumir su forma.
 11. **Commits por hito**, mensajes descriptivos, push al cierre de cada hito.
 12. **Idioma — español neutro (registrada 15 jul 2026)**: todo texto producido — copy de producto (UI, correos, páginas) Y reportes/comunicaciones de sesión — se escribe en español neutro: tuteo estándar (quieres, suelta, haz clic, puedes), nunca voseo (querés, soltá, hacé, podés) ni regionalismos de ningún país (ver `brief-diseno.md` de `trainmusiq/trainmusiq`).
+13. **Ko-fi visible siempre, desde que exista UI (registrada 16 jul 2026)**: el footer debe mostrar el enlace a ko-fi.com/trainmusiq con el copy canónico bilingüe (ver `roadmap.md` §3.12 de `trainmusiq/trainmusiq`) — la suscripción da más opciones y velocidad, el café es para quien el tier gratis ya le basta. Pendiente hasta que exista `index.html`.
 
 ## Al cerrar cada sesión
 Reportar: checklist de lo pedido con ✓/✗/⚠ (los ⚠ honestos valen más que ✓ de cortesía),
